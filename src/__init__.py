@@ -1,0 +1,2 @@
+# encoding: gb2312
+

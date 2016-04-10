@@ -1,0 +1,28 @@
+# encoding: gb2312
+
+import nose
+from src.util import *
+
+
+def test_nice_print():
+    """²âÊÔnice_printº¯Êı"""
+    try:
+        # ²âÊÔÊı×Ö
+        number_var = 1234
+        nice_print(number_var)
+        # ²âÊÔ×Ö·û´®
+        nice_print('This is a string sequence')
+        # ²âÊÔÊı×é
+        nice_print(['1', '2', '3'])
+        # ²âÊÔ¶ÔÏó
+        nice_print(dict(a=1, b=2))
+        assert True
+    except Exception:
+        assert False
+        raise Exception
+
+
+if __name__ == '__main__':
+    nose.runmodule()
+
+
